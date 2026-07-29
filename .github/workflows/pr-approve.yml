@@ -9,16 +9,12 @@ on:
         branches:
             - main
             - "release/**"
-
 jobs:
     test:
         runs-on: ubuntu-latest
         steps:
-            - name: Checkout Repo
-              uses: actions/checkout@v7
+        - name: Checkout Repo
+          uses: actions/checkout@v7
 
-            - name: Run Tests
-              run: npm test
-
-
-
+        - name: Run Tests
+          run: npm test
