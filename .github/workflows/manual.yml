@@ -15,4 +15,5 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: Deploy App.
-              run: echo "Deploying the application to ${{ github.event.inputs.environment }} environment."        
+              run: echo "Deploying the application to ${{ github.event.inputs.environment }} environment."   
+            #   run: echo "Deploying the application to ${{ inputs.environment }} environment."      
