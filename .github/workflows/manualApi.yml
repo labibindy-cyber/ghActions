@@ -8,3 +8,11 @@ jobs:
       steps:
           - name: Print Incident Details
             run: echo "Incident Report Received"
+
+# PS C:\ghActions> curl.exe -X POST `
+# >> -H "Authorization: Bearer $env:GITHUB_PAT" `
+# >> -H "Accept: application/vnd.github.v3+json" `
+# >> https://api.github.com/repos/labibindy-cyber/ghActions/dispatches `
+# >> -d '{\"event_type\": \"incident_report\"}'   
+
+# I added GITHUB_PAT in Environment Vars manually
