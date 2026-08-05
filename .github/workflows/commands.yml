@@ -2,10 +2,10 @@ on:
   workflow_dispatch:
 jobs:
   exmple1:
-    runs-on: ubunto-latest
+    runs-on: ubuntu-latest
     steps:
     - run: |
-        deprecated = true
+        deprecated=true
         if [[ deprecated ]]; then
           echo "::warning:: Deprecated Func. was used!"
         fi  
